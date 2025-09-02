@@ -1,0 +1,12 @@
+# Ignorar secrets e config sensíveis
+LangAI.API/LangAI.Api/appsettings.json
+
+# Pastas de build do .NET
+**/bin/
+**/obj/
+**/Debug/
+
+# Arquivos do VS/VS Code
+.vscode/
+*.user
+*.suo

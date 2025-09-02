@@ -1,0 +1,104 @@
+.container {
+  background-color: #F6D6B6;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.listaRanking {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.itemRanking {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.posicao {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #495057;
+  min-width: 50px;
+  text-align: center;
+}
+
+.infoAluno {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fotoAluno {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.detalhesAluno {
+  display: flex;
+  flex-direction: column;
+}
+
+.nomeAluno {
+  font-weight: 600;
+  color: #212529;
+  font-size: 1rem;
+}
+
+.pontuacao {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.nivelAluno {
+  font-weight: 600;
+  color: #4CAF50;
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.paginacaoContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.paginacao {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.botaoPagina {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.botaoPagina:hover {
+  background-color: #f8f9fa;
+}
+
+.botaoPagina.ativo {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}

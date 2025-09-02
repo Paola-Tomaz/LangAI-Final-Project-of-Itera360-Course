@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4a826;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0px #000;
+  margin-bottom: 50px;
+  position: relative;
+  width: 989px;
+}
+
+.text strong {
+  font-size: 42px;
+}
+
+.paragrafo p {
+  font-size: 20px;
+  color: #255736;
+  font-weight: 500;
+}
+
+.text h2 {
+  font-size: 42px;
+}
+
+.avatarContainer {
+  position: absolute;
+  right: 50px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

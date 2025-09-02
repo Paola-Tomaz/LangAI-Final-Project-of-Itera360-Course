@@ -1,0 +1,143 @@
+.container {
+  background-color: #F6D6B6;
+  min-height: 100vh;
+  padding: 1rem 2rem 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  min-height: 150px;
+  margin-bottom: 3rem;
+}
+
+.avatarContainer {
+  position: absolute;
+  left: 10px;
+  top: -38px;
+  height: 200px;
+  width: 200px;
+  z-index: 2;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 50px;
+}
+
+.cardBody {
+  background: white;
+  border-radius: 15px;
+  border: 2px solid;
+  box-shadow: 2px 6px rgb(0 0 0 / 0.3);
+  padding: 2rem 2rem 2rem 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardText {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cardButton {
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.cardButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .card {
+    min-height: 180px;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 90px; 
+    position: relative;
+  }
+
+  .avatarContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .cardBody {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .cardButton {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .avatarContainer {
+    width: 100px;
+    height: 130px;
+    top: -40px;
+  }
+
+  .cardText {
+    font-size: 1rem;
+  }
+
+  .cardButton {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

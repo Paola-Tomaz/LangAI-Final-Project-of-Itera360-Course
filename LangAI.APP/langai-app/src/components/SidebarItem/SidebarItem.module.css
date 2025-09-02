@@ -1,0 +1,26 @@
+.sidebar_item {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 12px; /* espaçamento entre ícone e texto */
+    margin: 30px 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.sidebar_item svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0; /* evita encolher */
+}
+
+.text_link {
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap; /* evita quebra de linha */
+}
+
+.sidebar_item:hover {
+    color: #EEB04D;
+}

@@ -1,0 +1,47 @@
+/* Transições entre páginas */
+.page-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 300ms ease-in;
+}
+
+/* Garante que o container principal ocupe toda a tela */
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Estilo para os links de transição */
+.route-link {
+  transition: color 0.1s ease;
+  color: #e8b348;
+  text-decoration: none;
+}
+
+.route-link:hover {
+  text-decoration: underline;
+}
+
+/* Container para as transições */
+.transition-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

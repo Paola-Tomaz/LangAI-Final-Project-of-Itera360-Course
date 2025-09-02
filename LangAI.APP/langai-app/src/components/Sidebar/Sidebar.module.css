@@ -1,0 +1,53 @@
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.sidebarWrapper {
+  display: flex;
+}
+
+.sidebar_content {
+  background-color: #255736;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1001;
+  color: white;
+  overflow: hidden;
+}
+
+.sidebar_header {
+  padding: 10px;
+}
+
+.sidebar_body {
+  padding-left: 10px;
+}
+
+.hamburguer {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.page_content {
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.line {
+
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+  }
+}
