@@ -80,7 +80,7 @@ dotnet run
 ### 🌐 Frontend (React)
 
 ```bash
-cd frontend
+cd langai-app
 npm install
 npm start
 ```
