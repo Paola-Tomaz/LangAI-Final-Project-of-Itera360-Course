@@ -19,7 +19,7 @@ LangAI é uma plataforma interativa de aprendizado de idiomas com exercícios ge
 ## 🏗️ Arquitetura do Projeto
 
 **Frontend**: React.js + CSS Modules  
-**Backend**: .NET 7 Web API  
+**Backend**: .NET 6 Web API  
 **Banco de Dados**: SQL Server  
 **Integração IA**: Groq (modelo llama-3.3-70b-versatible)  
 **Armazenamento de imagens**: AWS S3  
