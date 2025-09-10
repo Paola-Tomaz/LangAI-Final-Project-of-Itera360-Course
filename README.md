@@ -7,7 +7,7 @@ LangAI é uma plataforma interativa de aprendizado de idiomas com exercícios ge
 ## 🚀 Funcionalidades
 
 - Escolha do idioma com personagens únicos (Klaus 🇩🇪, Lola 🇬🇧, Sebastian 🇫🇷, Miyuki 🇯🇵)
-- Geração automática de perguntas via IA (OpenRouter / Groq)
+- Geração automática de perguntas via IA (Groq)
 - Sistema de XP por acerto e barra de progresso por exercício
 - Ranking em tempo real entre os usuários
 - Upload de foto de perfil
@@ -21,7 +21,7 @@ LangAI é uma plataforma interativa de aprendizado de idiomas com exercícios ge
 **Frontend**: React.js + CSS Modules  
 **Backend**: .NET 7 Web API  
 **Banco de Dados**: SQL Server  
-**Integração IA**: OpenRouter ou Groq (modelo Mixtral)  
+**Integração IA**: Groq (modelo llama-3.3-70b-versatible)  
 **Armazenamento de imagens**: AWS S3  
 **Autenticação**: JWT + Claims
 
@@ -43,12 +43,12 @@ LangAI/
 | Tecnologia        | Função                         |
 |-------------------|--------------------------------|
 | React.js          | Interface de usuário           |
-| ASP.NET Core Web API | Backend / API REST         |
+| ASP.NET Core Web API | Backend / API REST          |
 | Entity Framework  | ORM para SQL Server            |
 | AWS S3            | Upload e exibição de imagens   |
-| OpenRouter / Groq | Integração com IA              |
+| Groq              |  Integração com IA             |
 | JWT               | Autenticação e autorização     |
-| react-hook-form + yup | Validação de formulários  |
+| react-hook-form + yup | Validação de formulários   |
 
 ---
 
@@ -59,7 +59,7 @@ LangAI/
 - [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download)
 - [Node.js](https://nodejs.org/)
 - [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
-- Conta no [OpenRouter](https://openrouter.ai) ou [Groq](https://console.groq.com) com API Key
+- Conta no [Groq](https://console.groq.com) com API Key
 - Conta AWS com bucket S3 e CORS configurado
 
 ---
